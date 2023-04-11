@@ -14,3 +14,5 @@ function substituteNumbers() {
   }
   document.getElementById("result").innerHTML = resultArray.join(", ");
   document.getElementById("resultBox").style.display = "block";}
+
+  
