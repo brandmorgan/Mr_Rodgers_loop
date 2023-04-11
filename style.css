@@ -3,8 +3,16 @@ body {font-family: 'Rogers', sans-serif;
   background-size: cover;
   background-position: center;
 }
-h1{text-align: center;
+h1{
+  text-align: center;
   color: white;
   box-shadow: 4px;
   text-size-adjust: 20px;
   }
+  #resultBox {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(125, 190, 187, 0.841);
+    padding: 10px;
+    display: none;}
