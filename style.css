@@ -1,0 +1,10 @@
+body {font-family: 'Rogers', sans-serif;
+  background-image: url(https://static01.nyt.com/images/2018/03/02/arts/06rogers/06rogers-superJumbo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+h1{text-align: center;
+  color: white;
+  box-shadow: 4px;
+  text-size-adjust: 20px;
+  }
