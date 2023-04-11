@@ -12,7 +12,7 @@ function substituteNumbers() {
       result += userNumber[i];
     }
   }
- 
-  document.getElementById("result").innerHTML = result;
   document.getElementById("resultBox").style.display = "block";
+      document.getElementById("resultBox").querySelector("#result").innerHTML = result;
+ 
 }
