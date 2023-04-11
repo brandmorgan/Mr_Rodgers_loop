@@ -1,18 +1,16 @@
 function substituteNumbers() {
   var userNumber = document.getElementById("userNumber").value;
-  var result = ("");
-  for (var i = 0; i < userNumber.length; i++) {
-    if (userNumber[i] === "1") {
-      result += "beep";
-    } else if (userNumber[i] === "2") {
-      result += "boop";
-    } else if (userNumber[i] === "3") {
-      result += "won't you be my neighbor?";
+  var resultArray = [];
+  for (var i = 0; i <= userNumber; i++) {
+    if (i.toString().includes("3")) {
+      resultArray.push("Won't you be my neighbor?");
+    } else if (i.toString().includes("2")) {
+      resultArray.push("Boop!");
+    } else if (i.toString().includes("1")) {
+      resultArray.push("Beep");
     } else {
-      result += userNumber[i];
+      resultArray.push(i);
     }
   }
-  document.getElementById("resultBox").style.display = "block";
-      document.getElementById("resultBox").querySelector("#result").innerHTML = result;
- 
-}
+  document.getElementById("result").innerHTML = resultArray.join(", ");
+  document.getElementById("resultBox").style.display = "block";}
